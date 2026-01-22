@@ -7,7 +7,6 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -48,7 +47,7 @@ export default function Register() {
 
           <div className="password-field">
             <input
-              type={showPassword ? "text" : "password"}
+              type= "password"
               placeholder="Password"
               required
               onChange={(e) => setPassword(e.target.value)}

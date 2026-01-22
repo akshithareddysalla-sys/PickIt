@@ -33,7 +33,7 @@ export default function Home() {
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then(res => res.json())
-      .then(data => setProducts(data.slice(0, 6))); // 👈 only 6 products
+      .then(data => setProducts(data.slice(0, 6)));
   }, []);
 
   useEffect(() => {

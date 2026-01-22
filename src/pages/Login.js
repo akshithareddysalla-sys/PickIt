@@ -5,14 +5,13 @@ import "../styles/auth.scss";
 
 export default function Login() {
   const [email, setEmail] = useState("");
+  // eslint-disable-next-line
   const [password, setPassword] = useState("");
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    // mock login (no backend)
     login(email);
     navigate("/profile");
   }

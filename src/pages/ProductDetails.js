@@ -24,12 +24,10 @@ export default function ProductDetails() {
       .then(data => setProduct(data));
   }, [id]);
 
-  // ⛔ Wait until product is loaded
   if (!product) {
     return <p style={{ textAlign: "center" }}>Loading...</p>;
   }
 
-  // ✅ SAFE to use product now
   const cartItem = cart.find(item => item.id === product.id);
   const isWishlisted = wishlist.some(item => item.id === product.id);
 
