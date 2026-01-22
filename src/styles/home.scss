@@ -1,0 +1,235 @@
+/* HOME CAROUSEL WRAPPER */
+.carousel {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  /* INDIVIDUAL SLIDE */
+  .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* DARK OVERLAY FOR READABILITY */
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55)
+    );
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px 100px;
+  }
+  
+  /* SLIDE TEXT */
+  .slide-text {
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+    max-width: 90%;
+  
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+  
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+  }
+  
+  /* CTA BUTTON */
+  .carousel-btn {
+    background: transparent;
+    color: #ffffff;
+  
+    border: 2px solid #ffffff;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+  
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    margin: 0 auto 24px;
+    margin-bottom: 10%;
+  }
+  
+  .carousel-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
+  }
+
+  /* NAVIGATION ARROWS */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 12;
+  
+    background: rgba(0, 0, 0, 0.45);
+    border: none;
+    color: white;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-arrow i {
+    font-size: 18px;
+  }
+  
+  .nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.65);
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  /* LEFT / RIGHT POSITION */
+  .nav-arrow.left {
+    left: 20px;
+  }
+  
+  .nav-arrow.right {
+    right: 20px;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-arrow {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .nav-arrow.left {
+      left: 10px;
+    }
+  
+    .nav-arrow.right {
+      right: 10px;
+    }
+  }
+  
+  
+  /* DOTS INDICATOR */
+  .dots {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 10;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background: #fff;
+    transform: scale(1.3);
+  }
+  
+  @media (max-width: 768px) {
+    .slide-text {
+      margin-top: 60px;
+  
+      h1 {
+        font-size: 28px;
+      }
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  
+    .carousel-btn {
+      padding: 12px 30px;
+      font-size: 14px;
+      margin-bottom: 30%;
+    }
+  }
+  
+  .home-categories {
+  padding: 40px;
+  text-align: center;
+}
+
+.home-categories h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  background: #0d6efd;
+  color: white;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.home-products {
+  padding: 40px;
+  text-align: center;
+}

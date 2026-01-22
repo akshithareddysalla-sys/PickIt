@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+
+.primary-btn {
+  @include button;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: $light;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  .search {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
