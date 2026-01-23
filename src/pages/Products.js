@@ -40,6 +40,7 @@ export default function Products() {
     displayedProducts.sort((a, b) => b.price - a.price);
   }
 
+  // eslint-disable-next-line
   {displayedProducts.length === 0 && (
     <p style={{ padding: "40px" }}>No products found</p>
   )}

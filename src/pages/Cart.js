@@ -16,11 +16,10 @@ export default function Cart() {
       <h2>Your Cart</h2>
 
       {cart.length === 0 && <p>Your cart is empty</p>}
-
       {cart.map(item => (
         <div key={item.id} className="cart-item">
     
-          <img src={item.image} style={{ width: "70px" }} />
+          <img src={item.image} alt="product" style={{ width: "70px" }} />
 
           <div style={{ flex: 1 }}>
             <h4>{item.title}</h4>
