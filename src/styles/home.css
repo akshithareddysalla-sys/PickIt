@@ -113,6 +113,11 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .carousel {
+    height: 50vh;
+    width: 100%;
+    background: #000;
+  }
   .nav-arrow {
     width: 40px;
     height: 40px;

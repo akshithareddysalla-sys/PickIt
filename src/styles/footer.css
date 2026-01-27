@@ -125,6 +125,7 @@
 /* MOBILE */
 @media (max-width: 768px) {
   .newsletter {
+    display: flex;
     flex-direction: column;
   }
   .newsletter input,
