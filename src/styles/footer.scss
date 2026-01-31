@@ -125,30 +125,25 @@
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 926px) {
   .newsletter {
     flex-direction: column;
     align-items: stretch;
+    width: fit-content;
   }
 
-  .newsletter,
-.newsletter * {
-  box-sizing: border-box;
-}
-
-
   .newsletter input {
-    width: 100%;
+    width: 60%;
     border-radius: 8px;
-    padding: 12px;
-      font-size: 15px;
-    }
+    padding: 5px;
+    font-size: 15px;
+  }
 
   .newsletter button {
-    width: 100%;
+    width: 40%;
     margin-top: 10px;
     border-radius: 8px;
-    padding: 12px;
+    padding: 5px;
     font-size: 15px;
   }
 }
