@@ -148,33 +148,6 @@
     }
   }
   
-  
-  /* DOTS INDICATOR */
-  .dots {
-    position: absolute;
-    bottom: 18px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    z-index: 10;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .dot.active {
-    background: #fff;
-    transform: scale(1.3);
-  }
-  
   @media (max-width: 768px) {
     .slide-text {
       margin-top: 60px;

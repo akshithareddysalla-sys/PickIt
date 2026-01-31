@@ -119,17 +119,7 @@ export default function Home() {
       <button className="nav-arrow right" onClick={nextSlide}>
         <i className="fas fa-chevron-right"></i>
       </button>
-
-      {/* Dots Indicator */}
-      <div className="dots">
-        {slides.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === current ? "active" : ""}`}
-            onClick={() => setCurrent(index)}
-          ></span>
-        ))}
-      </div>
+      
     </div>
 
     <section className="home-categories">
